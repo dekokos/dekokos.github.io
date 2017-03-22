@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider Mountains</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="slider">
+
+		<div class="slider__images">
+			<div class="slider__images-wrap">
+				<img src="img/gory1.jpg" alt="1">
+				<img src="img/gory2.jpg" alt="2">
+				<img src="img/gory3.jpg" alt="3">
+				<img src="img/gory4.jpg" alt="4">
+				<img src="img/gory5.jpg" alt="5">
+			</div>
+
+		<div class="slider__navigation">
+			<a href="#" class="slider__pager slider__pager_previous">
+				<div class="wrap-left"></div>
+				<i class="fa fa-arrow-left fa-stack-2x"></i>
+				
+			</a>
+			<a href="#" class="slider__pager slider__pager_next">
+				<div class="wrap-right"></div>
+				<i class="fa fa-arrow-right fa-stack-2x"></i>
+			</a>
+		</div>
+		
+		</div>
+		
+		<ul class="slider__pagination">
+			<li class="slider__pagination-item slider__pagination-item_tmpl"><a href="#" data-slider__item="0">0</a></li>
+		</ul>
+
+	</div>
+
+
+
+
+	<script src="js/slider.js"></script>
+	<script>
+		new Slider('.slider', 
+			{direction: 'horizontal'}
+			);
+	</script>
+</body>
+</html>

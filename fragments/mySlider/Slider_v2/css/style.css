@@ -1,0 +1,87 @@
+body {
+	padding-top: 20px;
+}
+.slider {
+	width: 712px;
+	margin: 0 auto;
+}
+.slider__images {
+	position: relative;
+	overflow: hidden;
+	width: 712px;
+	height: 484px;
+}
+.slider__images-wrap {
+	font-size: 0;
+	white-space: nowrap;
+	transition: margin .5s ease-out;
+}
+img {
+	width: 712px;
+	height: 484px;
+}
+.slider__navigation {
+	margin: 0 auto;
+	width: 712px;
+}
+.slider__navigation {
+	opacity: 0;
+	transition: opacity .5s ease-out;
+  }
+.slider__navigation a {
+	color: white;
+}
+.slider__navigation:hover {
+	opacity: 1;
+}
+.slider__pager {
+	text-decoration: none;
+}
+.slider__pager_next {
+	right: 100px;
+}
+.slider__pager_previous, .slider__pager_next {
+	position: absolute;
+	top: 0;
+}
+.wrap-left, .wrap-right {
+	width: 100px;
+	height: 484px;
+	position: absolute;
+}
+
+i {
+	top: 230px;
+	margin-left: 35px;
+}
+.slider__pagination-item_tmpl {
+	display: none;
+}
+
+
+.slider__pagination {
+	margin: 6px 0 0;
+	list-style: none;
+	position: absolute;
+	left: 45%;
+}
+.slider__pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+.slider__pagination li a{
+	display: block;
+	overflow: hidden;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url('../img/pagination.png');
+	background-position: 0 0;
+}
+.slider__pagination li a.active, .slider__pagination li a:hover.active {
+	background-position: 0 -13px;
+}
+.slider__pagination li a:hover {
+	background-position: 0 -26px;
+}
