@@ -1,0 +1,673 @@
+@font-face {
+	font-family: Helvetica;
+	src:url(fonts/helvetica-regular.ttf);
+}
+@font-face {
+	font-family: "Helvetica Bold";
+	src:url(fonts/helvetica-bold.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Helvetica;
+}
+a{
+	text-decoration: none;
+}
+
+/*HEADER*/
+header{
+	width: 100%;
+	background-color: #3498db;
+	color: #fff;
+	height: 80px;
+}
+.wrapper{
+	max-width: 990px;
+	margin: 0 auto;
+}
+.header_contact{
+	float: right;
+	margin-top: 30px;
+}
+.header_contact h5{
+	font-size: 13px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.header_title{
+	float: left;
+	margin-top: 15px;
+}
+.header_title img, .header_title h2{
+	display: inline-block;
+	vertical-align: middle;
+}
+.header_title h2{
+	margin-left: 15px;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.header_contact a{
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 100px;
+	text-align: center;
+	color: #3498db;
+	margin-right: 5px;
+}
+.fa{
+	vertical-align: middle;
+}
+i.fa-google-plus{
+	font-size: 13px;
+}
+
+/*UNIVERSITY_INFO*/
+.university_form{
+	background-color: #fff;
+	max-width: 360px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 26px 15px 26px 15px;
+	float: right;
+	margin-top: 30px;
+	border-bottom: 4px solid #3498db;
+}
+.university_form h1{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 26px;
+}
+.university_form input, textarea, select{
+	display: block;
+	width: 320px;
+	height: 36px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	border: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+.university_form input{
+	padding-left: 10px;
+}
+.university_form select{
+	padding-left: 5px;
+}
+.university_form textarea{
+	max-height: 72px;
+	max-width: 320px;
+	min-width: 320px;
+	min-height: 72px;
+	font-family: Helvetica;
+	padding: 10px 0 0 10px;
+	resize: none;
+}
+.university_form input[type="submit"]{
+	width: 220px;
+	height: 50px;
+	font-size: 25px;
+	background-color: #e74c3c;
+	color: #fff;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.university_form input[type="submit"]:hover{
+	color: #000;
+}
+.university_form input::-webkit-input-placeholder{
+	color: #333333;
+}
+.university_form input::-moz-input-placeholder{
+	color: #333333;
+}
+.university_form textarea::-webkit-input-placeholder{
+	color: #333333;
+}
+.university_form textarea::-moz-placeholder{
+	color: #333333;
+}
+.university_info{
+	background-image: url(images/banner.png);
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 350px;
+	position: relative;
+}
+.university_info::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(41, 128, 185, .7);
+}
+.university_info .wrapper{
+	z-index: 1; 
+	position: relative;
+}
+.banner{
+	color: #fff;
+	margin-right: 400px;
+}
+.banner h1{
+	font-family: "Helvetica Bold", sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	padding: 75px 0 15px 0;
+}
+.banner p{
+	font-size: 30px;
+}
+
+/*UNIVERSITY_ABOUT*/
+.university_about{
+	background-color: #f2f2f2;
+	min-height: 230px;
+}
+.university_about .about{
+	margin-right: 400px;
+	color: #333333;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+.university_about h5{
+	font-family: "Helvetica Bold", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+}
+.university_about p{
+	font-size: 13px;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+
+/*GOOD_POINT*/
+.good_point .wrapper{
+	text-align: center;
+	border-bottom: 1px solid #eaeaea;
+}
+.good_point h2{
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #3498db;
+	margin: 40px 0;
+}
+.good_point_item img{
+	width: 290px;
+	height: 160px;
+}
+.good_point_item{
+	width: 287px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 60px;
+}
+.good_point_item:last-of-type{
+	margin-right: 0;
+}
+.good_point_item h4{
+	margin: 27px 0;
+	font-size: 15px;
+	font-family: "Helvetica Bold", sans-serif;
+	text-transform: uppercase;
+	color: #333333;
+}
+.good_point_item p{
+	font-size: 14px;
+	color: #333333;
+	padding: 7px;
+	line-height: 1.5;
+}
+.point_button{
+	border: 1px solid #eaeaea;
+	border-radius: 100px;
+	margin: 27px auto;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	padding-top: 17px;
+	box-sizing: border-box;
+	font-size: 13px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .5s;
+}
+.point_button:hover{
+	transform: scale(1.5);
+	transition: .5s;
+}
+.point_button a{
+	color: #333333;
+}
+
+/*COMMENTS*/
+.comments_blockquote{
+	padding: 40px 265px 70px 0;
+	font-size: 13px;
+}
+.comments_blockquote h2{
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #3498db;
+	font-weight: normal;
+}
+.comments_blockquote p{
+	margin: 67px 0 25px 0;
+	color: #333333;
+	position: relative;
+}
+.comments_blockquote p::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url(images/blockquote_top.png);
+	background-repeat: no-repeat;
+	left: 0;
+	top: -30px;
+}
+.comments_blockquote p::after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url(images/blockquote_bottom.png);
+	background-repeat: no-repeat;
+	right: 0;
+	bottom: -75px;
+}
+.comments_blockquote blockquote{
+	text-align: right;
+	font-family: "Helvetica Bold", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.slider_buttons{
+	float: right;
+	margin-right: -265px;
+	margin-top: -30px;
+}
+.slider_buttons>a{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ededed;
+	border-radius: 100px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-left: 8px;
+}
+.slider_buttons a:first-of-type::after{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #8b8b8b;
+	border-top: transparent;
+	border-right: transparent;
+	top: 10px;
+	left: 12px;
+	display: block;
+	transform: rotate(45deg);
+}
+.slider_buttons a:last-of-type::after{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #8b8b8b;
+	border-bottom: transparent;
+	border-left: transparent;
+	top: 10px;
+	left: 9px;
+	display: block;
+	transform: rotate(45deg);
+}
+.slider_buttons a:hover{
+	background-color: #ebe9e9;
+}
+.slider_buttons a:last-of-type:hover::after{
+	border: 2px solid #373737;
+	border-bottom: transparent;
+	border-left: transparent;
+}
+.slider_buttons a:first-of-type:hover::after{
+	border: 2px solid #373737;
+	border-top: transparent;
+	border-right: transparent;
+}
+.comments_button{
+	padding: 68px 0 63px 0;
+	background-color: #f2f2f2;
+}
+.comments_button button{
+	width: 540px;
+	min-height: 60px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	background-color: #e74c3c;
+	border: none;
+	position: relative;
+	padding-right: 50px;
+	cursor: pointer;
+	transition: .5s;
+}
+.comments_button button::before{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 100px;
+	right: 25px;
+	top: 15px;
+}
+.comments_button button::after{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	display: block;
+	border: 2px solid #fff;
+	border-left: transparent;
+	border-bottom: transparent;
+	transform: rotate(45deg);
+	right: 38px;
+	top: 26px;
+}
+.comments_button button:hover{
+	transition: .5s;
+	transform: scale(1.5);
+	color: #000;
+}
+.comments_button button:hover::before{
+	border-color: #000;
+	transition: .5s;
+}
+.comments_button button:hover::after{
+	border: 2px solid #000;
+	border-left: transparent;
+	border-bottom: transparent;
+	transition: .5s;
+}
+.comments_button .wrapper{
+	position: relative;
+}
+.comments .wrapper img{
+	position: absolute;
+	right: 20px;
+	bottom: -65px;
+}
+
+/*FOOTER*/
+footer{
+	background-color: #3498db;
+	color: #fff;
+	padding: 40px 0 55px;
+}
+footer h2{
+	width: 170px;
+	font-size: 26px;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-left: 10px;
+}
+
+footer img, footer h2, .contact_info{
+	display: inline-block;
+	vertical-align: middle;
+}
+.contact_info{
+	font-size: 13px;
+	line-height: 2;
+	margin-left: 20px;
+	padding-left: 20px;
+	position: relative;
+}
+.contact_info h5{
+	display: inline-block;
+}
+.contact_info::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	left: 0;
+	background-color: #2980b9;
+}
+footer .connect a{
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 100px;
+	text-align: center;
+	color: #3498db;
+	margin-left: 5px;
+}
+footer .connect a i{
+	vertical-align: middle;
+}
+footer .fa{
+	padding-bottom: 6px;
+}
+footer .fa-facebook{
+	padding-right: 2px;
+}
+@media (min-width: 800px) and (max-width: 999px){
+	.wrapper{
+		padding: 0 20px;
+	}
+	.good_point .wrapper{
+		text-align: left;
+	}
+	.good_point_item{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.good_point h2{
+		font-size: 20px;
+		font-weight: normal;
+	}
+	.good_point_item h4{
+		margin: 0;
+		margin-bottom: 10px;
+		margin-left: 5px;
+	}
+	.good_point_item img, .point_item_text{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.good_point_item img{
+		width: 290px;
+	}
+	.point_item_text{
+		max-width: 58%;
+		margin-left: 20px;
+	}
+	.point_button{
+		margin: 10px 0 40px;
+		padding-left: 5px;
+	}
+	.contact_info{
+		width: 490px;
+	}
+}
+@media (min-width: 320px) and (max-width: 799px){
+	header{
+		height: 160px;
+		text-align: center;
+	}
+	.header_title img, .header_title h2{
+		display: block;
+	}
+	.header_title img{
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	.header_title h2{
+		padding: 10px 0 5px 0;
+		width: 250px;
+		margin: 0 auto;
+		border-bottom: 1px solid #2980b9;
+	}
+	.header_contact, .header_title{
+		float: none;
+		margin: 0;
+	}
+	.header_contact h5{
+		padding: 10px 0;
+	}
+ 	.university_info .wrapper{
+ 		margin: 0;
+ 	}
+	.university_form{
+		display: block;
+		position: absolute;
+		top: 200px;
+		margin: 0;
+		margin-left: calc((100% - 300px)/2);
+		width: 300px;
+	}
+	.university_form input, .university_form textarea, .university_form select{
+		max-width: 260px;
+	}
+	.university_form textarea{
+		min-width: 260px;
+	}
+	.banner{
+		width: 100%;
+		text-align: center;
+	}
+	.banner h1{
+		font-size: 40px;
+		padding-top: 40px;
+	}
+	.banner p{
+		font-size: 16px;
+		padding: 0 45px;
+	}
+
+	.university_about{
+		padding-top: 380px;
+		padding: 380px 40px 0 40px;
+		overflow: hidden;
+	}
+	.university_about .about{
+		margin: 0;
+		text-align: justify;
+	}
+	.about h5{
+		text-align: center;
+	}
+	
+	.good_point h2{
+		text-align: center;
+	}
+	.good_point_item:last-of-type{
+		margin: 0 auto;
+	}
+
+	.good_point_item{
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.comments .wrapper{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.comments_blockquote{
+		padding-right: 0; 
+		padding-bottom: 200px;
+	}
+	.comments_blockquote h2{
+		text-align: center;
+	}
+	.slider_buttons{
+		float: none;
+		display: block;
+		margin: 20px 0 0 0;
+		text-align: center;
+	}
+	.comments_blockquote p{
+		margin-top: 20px;
+		text-align: justify;
+	}
+	.comments_button .wrapper{
+		margin: 0;
+		padding: 0;
+	}
+	.comments_button button{
+		font-size: 20px;
+		width: 275px;
+		height: 130px;
+		margin-left: 15px;
+		padding: 0;
+		display: block;
+		padding-bottom: 20px;
+	}
+	.comments_button button::before{
+		top: 80px;
+		left: 120px;
+	}
+	.comments_button button::after{
+		top: 90px;
+		left: 128px;
+	}
+	.comments_button button:hover{
+		transform: scale(1.1);
+	}
+
+	footer img, footer h2{
+		display: block;
+	}
+	footer img{
+		margin: 0 auto;
+	}
+	footer h2{
+		font-size: 20px;
+		margin: 0 auto;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #2980b9;
+	}
+	.contact_info::before{
+		display: none;
+	}
+	.contact_info{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.connect{
+		padding-top: 10px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contact_info p{
+		display: block;
+		margin: 0;
+		margin: 0 auto;
+		width: 240px;
+		text-align: center;
+		padding-top: 30px;
+	}
+}
