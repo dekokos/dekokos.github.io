@@ -989,4 +989,43 @@ footer .footer_copyright .btn {
 	background-color: #fff;
 	color: #000;
 	font-family: "PT Sans Narrow", sans-serif;
+	display: none;
+}
+.existing_content p:first-child {
+	text-align: center;
+}
+.toggle_content {
+	border: 1px solid gray;
+	position: fixed;
+	top: 201px;
+	left: 1px;
+	background-color: #fff;
+	cursor: pointer;
+	z-index: 10;
+}
+.toggle_content:hover{
+	background-color: #000;
+}
+.toggle_content:hover .icon_bar {
+	background-color: #fff;
+}
+.icon_bar {
+	background-color: #000;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 5px;
+}
+.content_show {
+	display: block;
+	-webkit-animation: bnc .5s;
+	-o-animation: bnc .5s;
+	animation: bnc .5s;
+}
+@keyframes bnc {
+	0% {transform: translateX(-2000px);}
+	70% {transform: translateX(30px);}
+	90% {transform: translateX(-10px);}
+	100% {transform: translateX(0);}
 }

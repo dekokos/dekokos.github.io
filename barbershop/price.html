@@ -117,6 +117,34 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal_content">
+		<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal_content_title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form action="#" class="login_form" method="post">
+			<input type="text" class="icon_user" name="login" placeholder="Логин">
+			<input type="password" class="icon_password" name="password" placeholder="Пароль">
+			<label class="login_checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox_indicator">
+				</span>
+				Запомните меня
+			</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal_content_map">
+		<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex_map"></div>
+	</div>
+	<div class="modal_overlay"></div>
+	<script src="js/script.js"></script>
+	<button class="toggle_content" type="button">
+		<span class="icon_bar"></span>
+		<span class="icon_bar"></span>
+		<span class="icon_bar"></span>
+	</button>
 	<div class="existing_content">
 		<p>Существующий контент:</p>
 		<p>Barbershop(главная): Вход(анимация при появлении и неправильном вводе, сохранение логина), Как проехать(Карта)</p>
@@ -124,5 +152,6 @@
 		<p>Магазин -></p>
 		<p>-> Набор для путешествий(1-й)</p>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>

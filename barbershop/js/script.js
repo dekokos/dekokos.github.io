@@ -10,6 +10,9 @@ var mapOpen = document.querySelector(".js_open_map");
 var mapPopup = document.querySelector(".modal_content_map");
 var mapClose = mapPopup.querySelector(".modal_content_close");
 
+var btnContent = document.querySelector(".toggle_content");
+var content = document.querySelector(".existing_content");
+
 link.addEventListener("click", function(event) {
 	event.preventDefault();
 	loginBlock.classList.add('modal_content_show')
@@ -41,6 +44,12 @@ window.addEventListener("keydown", function(event) {
 	}
 });
 
+/*Content*/
+btnContent.addEventListener("click", function(event) {
+	event.preventDefault();
+	content.classList.toggle("content_show");
+});
+
 /*Map*/
 mapOpen.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -57,3 +66,4 @@ window.addEventListener("keydown", function(event) {
 		}
 	}
 });
+
