@@ -1,0 +1,50 @@
+.page-header__logo {
+  height: 85px;
+  text-align: center; }
+
+.page-header__logo img {
+  width: 230px;
+  height: 85px; }
+
+@media (min-width: 768px) {
+  .page-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 0;
+    background-color: #000; }
+  .page-header__logo {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center -9px;
+    background-size: cover; }
+  .page-header__logo img {
+    position: absolute;
+    bottom: 257px;
+    left: 50%;
+    width: 370px;
+    height: auto;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); } }
+
+@media (min-width: 1200px) {
+  .page-header__logo {
+    height: 648px;
+    background-position: center 0px;
+    background-size: cover; }
+  .page-header__logo img {
+    bottom: 438px; } }
