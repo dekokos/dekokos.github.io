@@ -1,5 +1,4 @@
 .advantages__wrapper {
-<<<<<<< HEAD
   width: auto;
   padding-top: 30px;
   text-align: center; }
@@ -8,17 +7,6 @@
       width: 84%;
       max-width: 1200px;
       margin: 0 auto; } }
-=======
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 30px; }
-  @media (min-width: 768px) {
-    .advantages__wrapper {
-      width: 640px; } }
-  @media (min-width: 1200px) {
-    .advantages__wrapper {
-      width: 960px; } }
->>>>>>> origin/master
 
 .advantages__items {
   margin: 0;
@@ -28,16 +16,11 @@
 .advantages__item {
   margin-bottom: 23px;
   padding: 0 44px;
-<<<<<<< HEAD
   font-size: 20px; }
-=======
-  padding-top: 125px; }
->>>>>>> origin/master
 
 .advantages__item:nth-child(n+2) {
   display: none; }
 
-<<<<<<< HEAD
 .advantages__toggles {
   display: none; }
 
@@ -45,8 +28,6 @@
   text-transform: uppercase;
   font-size: 30px; }
 
-=======
->>>>>>> origin/master
 @media (min-width: 768px) {
   .advantages__wrapper {
     padding-top: 42px; }
@@ -54,7 +35,6 @@
     margin: 0 30px;
     margin-bottom: 40px;
     padding: 0;
-<<<<<<< HEAD
     padding-left: 128px; }
   .advantages__item {
     border-bottom: 1px solid #3e3e3e;
@@ -71,23 +51,11 @@
     top: 0; }
   .slider__input {
     display: none; } }
-=======
-    padding-bottom: 39px;
-    padding-left: 128px; }
-  .advantages__item:nth-child(n+2) {
-    display: block; }
-  .advantages__item:last-child {
-    margin-bottom: 0; } }
->>>>>>> origin/master
 
 @media (min-width: 1200px) {
   .advantages__wrapper {
     padding-top: 75px;
-<<<<<<< HEAD
     text-align: left; }
-=======
-    padding-bottom: 59px; }
->>>>>>> origin/master
   .advantages__items {
     display: table;
     width: 100%; }
@@ -96,17 +64,12 @@
     width: 240px;
     margin: 0;
     padding: 0 40px;
-<<<<<<< HEAD
     padding-top: 50px; }
-=======
-    padding-top: 130px; }
->>>>>>> origin/master
   .advantages__item:nth-child(n+2) {
     display: table-cell; }
   .advantages__item:nth-child(2) {
     width: 200px;
     padding-left: 60px;
-<<<<<<< HEAD
     padding-right: 60px; }
   .advantages__item {
     border-bottom: none;
@@ -116,6 +79,3 @@
       border-right: none; }
   .advantages__img {
     position: relative; } }
-=======
-    padding-right: 60px; } }
->>>>>>> origin/master

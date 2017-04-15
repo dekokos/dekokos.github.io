@@ -148,11 +148,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 50%;
-<<<<<<< HEAD
     /* flex-basis: 250px;
-=======
-    /* flex-basis: 250px;
->>>>>>> origin/master
 		flex-grow: 1; //вместо box, width */
     padding: 25px 35px;
     padding-bottom: 28px; }

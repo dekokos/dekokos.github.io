@@ -1,11 +1,5 @@
 .page-footer {
-<<<<<<< HEAD
   border: 1px solid #3e3e3e;
-=======
-  border: 1px solid #fff; }
-
-.page-footer__wrapper {
->>>>>>> origin/master
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,7 +8,6 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: columns;
       -ms-flex-direction: columns;
-<<<<<<< HEAD
           flex-direction: columns;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -114,6 +107,3 @@
     display: inline-block; }
   .page-footer__copyright {
     margin-top: -18px; } }
-=======
-          flex-direction: columns; }
->>>>>>> origin/master

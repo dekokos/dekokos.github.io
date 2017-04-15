@@ -589,7 +589,6 @@ body {
     width: 640px; } }
 
 .advantages__wrapper {
-<<<<<<< HEAD
   width: auto;
   padding-top: 30px;
   text-align: center; }
@@ -598,17 +597,6 @@ body {
       width: 84%;
       max-width: 1200px;
       margin: 0 auto; } }
-=======
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 30px; }
-  @media (min-width: 768px) {
-    .advantages__wrapper {
-      width: 640px; } }
-  @media (min-width: 1200px) {
-    .advantages__wrapper {
-      width: 960px; } }
->>>>>>> origin/master
 
 .advantages__items {
   margin: 0;
@@ -618,16 +606,11 @@ body {
 .advantages__item {
   margin-bottom: 23px;
   padding: 0 44px;
-<<<<<<< HEAD
   font-size: 20px; }
-=======
-  padding-top: 125px; }
->>>>>>> origin/master
 
 .advantages__item:nth-child(n+2) {
   display: none; }
 
-<<<<<<< HEAD
 .advantages__toggles {
   display: none; }
 
@@ -635,8 +618,6 @@ body {
   text-transform: uppercase;
   font-size: 30px; }
 
-=======
->>>>>>> origin/master
 @media (min-width: 768px) {
   .advantages__wrapper {
     padding-top: 42px; }
@@ -644,7 +625,6 @@ body {
     margin: 0 30px;
     margin-bottom: 40px;
     padding: 0;
-<<<<<<< HEAD
     padding-left: 128px; }
   .advantages__item {
     border-bottom: 1px solid #3e3e3e;
@@ -661,23 +641,11 @@ body {
     top: 0; }
   .slider__input {
     display: none; } }
-=======
-    padding-bottom: 39px;
-    padding-left: 128px; }
-  .advantages__item:nth-child(n+2) {
-    display: block; }
-  .advantages__item:last-child {
-    margin-bottom: 0; } }
->>>>>>> origin/master
 
 @media (min-width: 1200px) {
   .advantages__wrapper {
     padding-top: 75px;
-<<<<<<< HEAD
     text-align: left; }
-=======
-    padding-bottom: 59px; }
->>>>>>> origin/master
   .advantages__items {
     display: table;
     width: 100%; }
@@ -686,17 +654,12 @@ body {
     width: 240px;
     margin: 0;
     padding: 0 40px;
-<<<<<<< HEAD
     padding-top: 50px; }
-=======
-    padding-top: 130px; }
->>>>>>> origin/master
   .advantages__item:nth-child(n+2) {
     display: table-cell; }
   .advantages__item:nth-child(2) {
     width: 200px;
     padding-left: 60px;
-<<<<<<< HEAD
     padding-right: 60px; }
   .advantages__item {
     border-bottom: none;
@@ -733,31 +696,6 @@ body {
     text-align: left; }
   .news__item:first-child {
     border-bottom: 1px solid #3e3e3e; }
-=======
-    padding-right: 60px; } }
-
-.news__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 67px;
-  padding-bottom: 28px; }
-  @media (min-width: 768px) {
-    .news__wrapper {
-      width: 640px; } }
-  @media (min-width: 1200px) {
-    .news__wrapper {
-      width: 960px; } }
-
-.news__title {
-  margin: 0;
-  margin-bottom: 28px; }
-
-.news__item {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 7px;
-  list-style: none; }
->>>>>>> origin/master
 
 .news__item:nth-child(n+3) {
   display: none; }
@@ -765,7 +703,6 @@ body {
 .news__item:nth-child(2) {
   padding-bottom: 0; }
 
-<<<<<<< HEAD
 .news__date {
   position: absolute;
   left: 0;
@@ -845,38 +782,11 @@ body {
   .news__wrapper {
     width: 100%;
     position: relative; }
-=======
-@media (min-width: 768px) {
-  .news {
-    padding-top: 90px;
-    padding-bottom: 28px; }
-  .news__wrapper {
-    padding: 0; }
-  .news__title {
-    min-height: 40px;
-    margin-right: 200px;
-    margin-bottom: 55px; }
-  .news__items {
-    font-size: 0; }
-  .news__item {
-    display: inline-block;
-    width: 220px;
-    margin: 0;
-    padding: 0 30px;
-    padding-left: 70px;
-    vertical-align: top; } }
-
-@media (min-width: 1200px) {
-  .news {
-    padding-top: 88px;
-    padding-bottom: 32px; }
->>>>>>> origin/master
   .news__title {
     margin-left: 70px; }
   .news__item:nth-child(n+3) {
     display: inline-block; } }
 
-<<<<<<< HEAD
 .reviews__wrapper {
   background-color: #FFF;
   color: #000;
@@ -968,12 +878,6 @@ body {
 
 .page-footer {
   border: 1px solid #3e3e3e;
-=======
-.page-footer {
-  border: 1px solid #fff; }
-
-.page-footer__wrapper {
->>>>>>> origin/master
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -982,7 +886,6 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: columns;
       -ms-flex-direction: columns;
-<<<<<<< HEAD
           flex-direction: columns;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1082,6 +985,3 @@ body {
     display: inline-block; }
   .page-footer__copyright {
     margin-top: -18px; } }
-=======
-          flex-direction: columns; }
->>>>>>> origin/master
