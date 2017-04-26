@@ -70,15 +70,15 @@ h3 {
   margin: 0;
   font-size: 48px;
   line-height: 0.992;
-  padding: 0 2%;
-  padding-left: 3%; }
+  padding: 0 20px;
+  padding-left: 26px; }
 
 @media (min-width: 1200px) {
   .header__title {
     padding-right: 0; }
   .header__wrapper {
-    padding-left: 10%;
-    padding-right: 10%; } }
+    padding-left: 100px;
+    padding-right: 100px; } }
 
 @media (max-width: 767px) {
   .header__wrapper {
@@ -91,16 +91,22 @@ h3 {
     border-right: none;
     border-bottom: 2px solid #fa9755;
     padding: 20px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .header__title {
+    text-align: center; } }
+
+@media (max-width: 480px) {
+  .header__title {
+    text-align: center; } }
 
 .reality__wrapper {
   text-align: center;
-  margin: 47px 4%;
+  margin: 47px 60px;
   margin-bottom: 42px;
   position: relative; }
 
 .reality__header {
-  margin: 0 11%; }
+  margin: 0 110px; }
 
 .reality__header-title {
   color: #fbae44;
@@ -194,6 +200,21 @@ h3 {
   .reality__block-bottom .reality__item .reality__item-descr {
     padding-top: 10px; }
 
+@media (max-width: 768px) {
+  .reality__header {
+    margin: 0 50px; }
+  .reality__block-bottom .reality__item {
+    padding-top: 50px; }
+  .reality__block-top .reality__item {
+    padding-bottom: 50px; }
+    .reality__block-top .reality__item:last-child {
+      padding-bottom: 0; } }
+
+@media (max-width: 480px) {
+  .reality__wrapper {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
 .offer {
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(#f46628), color-stop(50%, #fb7c0e), to(#fd9f2a));
@@ -212,7 +233,7 @@ h3 {
     left: 60px; }
 
 .offer__wrapper {
-  padding: 47px;
+  padding: 50px;
   padding-bottom: 75px; }
 
 .offer__header {
@@ -318,9 +339,9 @@ h3 {
 
 @media (min-width: 1200px) {
   .offer__list-item {
-    margin-left: 20%; }
+    margin-left: 150px; }
   .offer__list-bottom .offer__list-item {
-    margin-left: 20%; } }
+    margin-left: 150px; } }
 
 @media (max-width: 767px) {
   .offer::before, .offer::after {
@@ -338,7 +359,7 @@ h3 {
   text-align: center; }
 
 .ahead__wrapper {
-  padding: 50px 5%;
+  padding: 50px 50px;
   padding-bottom: 6px; }
 
 .ahead__header {
@@ -365,7 +386,7 @@ h3 {
 .ahead__descr {
   margin-top: 65px;
   font-size: 20px;
-  padding: 0 15%; }
+  padding: 0 150px; }
 
 .ahead__block {
   margin: 40px auto;
@@ -407,11 +428,14 @@ h3 {
     padding-left: 0;
     padding-right: 0; }
   .ahead__block {
-    margin-left: 5%;
-    margin-right: 5%; }
+    margin-left: 50px;
+    margin-right: 50px; }
   .ahead__list {
-    margin-left: 10%;
-    margin-right: 5%; } }
+    margin-left: 60px;
+    margin-right: 20px;
+    font-size: 20px; }
+  .ahead__descr {
+    padding: 0 50px; } }
 
 .shopping-list {
   text-align: center;
@@ -421,7 +445,7 @@ h3 {
   padding-bottom: 47px; }
 
 .shopping-list__header {
-  margin: 0 3%; }
+  margin: 0 35px; }
 
 .shopping-list__header-title {
   color: #fbae44;
@@ -442,7 +466,7 @@ h3 {
   min-height: 272px;
   font-size: 26px;
   line-height: 32px;
-  margin: 35px 12%;
+  margin: 35px 120px;
   margin-bottom: 77px; }
 
 .shopping-list__item {
@@ -511,6 +535,11 @@ h3 {
   padding: 0 10px;
   padding-bottom: 45px; }
 
+@media (max-width: 480px) {
+  .ringcentral-about__wrapper {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
 .ringc-subs {
   background-color: #1289bb; }
 
@@ -538,6 +567,11 @@ small {
   margin-bottom: -5px;
   max-width: 87%;
   height: auto; }
+
+@media (max-width: 480px) {
+  .ringc-subs__header {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 .ebook {
   text-align: center;
