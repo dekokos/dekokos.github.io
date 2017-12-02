@@ -1,4 +1,5 @@
 $(function () {
+
 	$('nav a').click(function(event) {
     event.preventDefault();
     var href=$(this).attr('href');
@@ -8,4 +9,10 @@ $(function () {
       scrollTop: top
     }, 1000);
   });
+
+  // $('.add').click(function(e) {
+  // 	e.preventDefault();
+  	
+  // });
+
 })
