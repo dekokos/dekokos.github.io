@@ -11,7 +11,8 @@ window.onload = function() {
   
       addCol.addEventListener('click', function(e) {
         e.preventDefault();
-        var numAddCol = +this.previousElementSibling.innerHTML.replace('₴', '').replace(/\s+/g, '');
+        // var numAddCol = +this.previousElementSibling.innerHTML.replace('₴', '').replace(/\s+/g, '');
+        var numAddCol = +this.previousElementSibling.innerHTML.match(/[0-9]/g).join('');
         // console.log(parseInt(numAddCol));
         // console.log(typeof(numAddCol));
         // console.log(numAddCol);
