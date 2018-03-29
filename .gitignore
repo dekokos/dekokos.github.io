@@ -1,3 +1,5 @@
 
 new-pc/node_modules/@gulp-sourcemaps/identity-map/node_modules/acorn/README.md
 new-pc/node_modules/
+start_template/.gitignore
+start_template/package-lock.json
