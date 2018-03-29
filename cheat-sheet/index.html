@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DeKo-Tsunami</title>
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/panda.ico" type="image/x-icon">
+</head>
+<body>
+  
+  <h2>
+    Яндекс API карта
+  </h2>
+   
+  <p>
+    <pre>
+      ymaps.ready(init);
+      var myMap,
+          myPlacemark;
+          
+      function init() {
+        
+          myMap = new ymaps.Map("map", {
+              center: [55.737337, 37.642447],
+              zoom: 17
+          });
+          
+          myPlacemark = new ymaps.Placemark([55.737337, 37.642447], {
+              hintContent: 'Zenit',
+              balloonContent: 'Zenit'
+          }, {<br>
+              // Опции.<br>
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: '../img/map/map-icon.png',
+              // Размеры метки.
+              iconImageSize: [57, 73],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-5, -38]
+          });
+  
+          myMap.behaviors.disable('scrollZoom'); //убрал скролл
+  
+          myPlacemark2 = new ymaps.Placemark([55.786613, 37.639075], {
+              hintContent: 'Zenit2',
+              balloonContent: 'Zenit2'
+          }, {
+              iconLayout: 'default#image',
+              iconImageHref: '../img/map/map-icon.png',
+              iconImageSize: [57, 73],
+              iconImageOffset: [-5, -38]
+          });
+          myMap.geoObjects.add(myPlacemark);//установить дефолтный маркер
+          myMap.geoObjects.add(myPlacemark2);
+      }
+  
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  
+  
+  
+  
+  чтобы на мобильных при скроле пальцем не скролилась карта
+  
+  var isMobile = {
+            Android: function () {
+            return navigator.userAgent.match(/Android/i)
+            },
+            BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i)
+            },
+            iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i)
+            },
+            Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i)
+            },
+            Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i)
+            },
+            any: function () {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows())
+            }
+            }
+            if (isMobile.any()) {
+            myMap.behaviors.disable('drag')
+            }
+    </pre>
+  </p>
+
+  <h2>
+    jquery.maskedinput.min
+  </h2>
+
+  <pre>
+    $('input[type="tel"]').mask("+79999999999");
+  </pre>
+
+  <h2>
+    RegExp, убираем пробелы
+  </h2>
+
+  <pre>
+    .replace(/\s/ig, '')
+  </pre>
+
+  <h2>
+    RegExp, разбить пробелами число на тысячи 10 000 000
+  </h2>
+
+  <pre>
+    .replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ')
+  </pre>
+
+</body>
+</html>
