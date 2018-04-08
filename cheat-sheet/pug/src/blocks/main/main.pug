@@ -69,14 +69,55 @@ h2.main-title Яндекс API карта
         | if (isMobile.any()) {
         |    myMap.behaviors.disable('drag')
         | }
+
 h2.main-title jquery.maskedinput.min
+    .copy-btn copyButton
     pre.main-content $('input[type="tel"]').mask("+79999999999");
 
 h2.main-title RegExp
     .main-content.inner-title убираем пробелы
+        .copy-btn copyButton
         pre.main-content .replace(/\s/ig, '')
     .main-content.inner-title разбить пробелами число на тысячи 10 000 000
+        .copy-btn copyButton
         pre.main-content .replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ')
+
 h2.main-title Youtube. Остановка видео при клике на другом элементе
     .main-content
         a(href="https://jsfiddle.net/Ciberpol/eo6L6g28/6/", target="_blank") https://jsfiddle.net/Ciberpol/eo6L6g28/6/
+
+h2.main-title SVG icon flags
+    .main-content
+        a(href="http://flag-icon-css.lip.is/", target="_blank") http://flag-icon-css.lip.is/
+
+h2.main-title OwlCarousel destroy
+    pre.main-content
+        | $owl.trigger('destroy.owl.carousel');
+        | $owl.find('.owl-stage-outer').children().unwrap();
+        | $owl.removeClass("owl-center owl-loaded owl-text-select-on");
+
+h2.main-title Ajax
+    pre.main-content
+        | $('.boxes a').on('click', function(e) {
+        |    e.preventDefault();
+        |   $framework = $(this).text();
+        |   $.ajax({
+        |       url: 'Demo.json',
+        |       type: 'POST',
+        |       data: $('#call_back_form').serialize(),
+        |       dataType: 'json',
+        |       beforeSend: function() {
+        |           $('.loader').show();
+        |       }
+        |   })
+        |   .done(function() {
+        |     alert( "success" );
+        |   })
+        |   .fail(function() {
+        |     alert( "error" );
+        |   })
+        |   .always(function() {
+        |     alert( "complete" );
+        |   })
+        |});
+    

@@ -143,18 +143,53 @@ if (isMobile.any()) {
 }</pre>
         </h2>
         <h2 class="main-title">jquery.maskedinput.min
+          <div class="copy-btn">copyButton</div>
           <pre class="main-content">$('input[type="tel"]').mask("+79999999999");</pre>
         </h2>
         <h2 class="main-title">RegExp
           <div class="main-content inner-title">убираем пробелы
+            <div class="copy-btn">copyButton</div>
             <pre class="main-content">.replace(/\s/ig, '')</pre>
           </div>
           <div class="main-content inner-title">разбить пробелами число на тысячи 10 000 000
+            <div class="copy-btn">copyButton</div>
             <pre class="main-content">.replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ')</pre>
           </div>
         </h2>
         <h2 class="main-title">Youtube. Остановка видео при клике на другом элементе
           <div class="main-content"><a href="https://jsfiddle.net/Ciberpol/eo6L6g28/6/" target="_blank">https://jsfiddle.net/Ciberpol/eo6L6g28/6/</a></div>
+        </h2>
+        <h2 class="main-title">SVG icon flags
+          <div class="main-content"><a href="http://flag-icon-css.lip.is/" target="_blank">http://flag-icon-css.lip.is/</a></div>
+        </h2>
+        <h2 class="main-title">OwlCarousel destroy
+          <pre class="main-content">$owl.trigger('destroy.owl.carousel');
+$owl.find('.owl-stage-outer').children().unwrap();
+$owl.removeClass("owl-center owl-loaded owl-text-select-on");</pre>
+        </h2>
+        <h2 class="main-title">Ajax
+          <pre class="main-content">$('.boxes a').on('click', function(e) {
+   e.preventDefault();
+  $framework = $(this).text();
+  $.ajax({
+      url: 'Demo.json',
+      type: 'POST',
+      data: $('#call_back_form').serialize(),
+      dataType: 'json',
+      beforeSend: function() {
+          $('.loader').show();
+      }
+  })
+  .done(function() {
+    alert( "success" );
+  })
+  .fail(function() {
+    alert( "error" );
+  })
+  .always(function() {
+    alert( "complete" );
+  })
+});</pre>
         </h2>
       </div>
     </section>
