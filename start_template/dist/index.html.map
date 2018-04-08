@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["index.pug"],"sourcesContent":["doctype html\r\nhtml\r\n  include includes/head.pug\r\n  body\r\n    h1 My Site\r\n    p Welcome to my super lame site.\r\n    h2 да-да\r\n"],"file":"index.html"}

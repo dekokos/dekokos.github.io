@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["second.pug"],"sourcesContent":["doctype html\r\nhtml\r\n  include includes/head.pug\r\n  body\r\n    h1 My second page"],"file":"second.html"}

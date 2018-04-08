@@ -1,0 +1,82 @@
+h2.main-title Яндекс API карта
+    pre.main-content ymaps.ready(init);
+        |
+        | var myMap,
+        |    myPlacemark;
+        |
+        | function init() {
+        |
+        |myMap = new ymaps.Map("map", {
+        |   center: [55.737337, 37.642447],
+        |   zoom: 17
+        |});
+        |
+        |myPlacemark = new ymaps.Placemark([55.737337, 37.642447], {
+        |   hintContent: 'Zenit',
+        |   balloonContent: 'Zenit'
+        |}, {
+        |
+        |// Опции.
+        |
+        | // Необходимо указать данный тип макета.
+        |   iconLayout: 'default#image',
+        |// Своё изображение иконки метки.
+        |   iconImageHref: '../img/map/map-icon.png',
+        |// Размеры метки.
+        |   iconImageSize: [57, 73],
+        |// Смещение левого верхнего угла иконки относит||ельно
+        |// её "ножки" (точки привязки).
+        |   iconImageOffset: [-5, -38]
+        |});
+        |
+        |myMap.behaviors.disable('scrollZoom'); //убрал скролл
+        |
+        |myPlacemark2 = new ymaps.Placemark([55.786613, 37.639075], {
+        |   hintContent: 'Zenit2',
+        |   balloonContent: 'Zenit2'
+        |}, {
+        |   iconLayout: 'default#image',
+        |   iconImageHref: '../img/map/map-icon.png',
+        |   iconImageSize: [57, 73],
+        |   iconImageOffset: [-5, -38]
+        |});
+        |myMap.geoObjects.add(myPlacemark);//установить дефолтный маркер
+        |myMap.geoObjects.add(myPlacemark2);
+        |};
+        |
+        | // чтобы на мобильных при скроле пальцем не скролилась карта
+        |
+        | var isMobile = {
+        |   Android: function () {
+        |     return navigator.userAgent.match(/Android/i)
+        |   },
+        |   BlackBerry: function () {
+        |     return navigator.userAgent.match(/BlackBerry/i)
+        |   },
+        |   iOS: function () {
+        |     return navigator.userAgent.match(/iPhone|iPad|iPod/i)
+        |   },
+        |   Opera: function () {
+        |     return navigator.userAgent.match(/Opera Mini/i)
+        |   },
+        |   Windows: function () {
+        |    return navigator.userAgent.match(/IEMobile/i)
+        |   },
+        |   any: function () {
+        |    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows())
+        |   }
+        | }
+        | if (isMobile.any()) {
+        |    myMap.behaviors.disable('drag')
+        | }
+h2.main-title jquery.maskedinput.min
+    pre.main-content $('input[type="tel"]').mask("+79999999999");
+
+h2.main-title RegExp
+    .main-content.inner-title убираем пробелы
+        pre.main-content .replace(/\s/ig, '')
+    .main-content.inner-title разбить пробелами число на тысячи 10 000 000
+        pre.main-content .replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ')
+h2.main-title Youtube. Остановка видео при клике на другом элементе
+    .main-content
+        a(href="https://jsfiddle.net/Ciberpol/eo6L6g28/6/", target="_blank") https://jsfiddle.net/Ciberpol/eo6L6g28/6/
