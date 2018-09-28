@@ -8,10 +8,9 @@ body, h1 {
 
 .main-wrap {
   width: 100%;
-  height: 100vh;
-  min-height: 600px;
   background-color: slategray;
   font-family: "Roboto Mono", sans-serif;
+  overflow: hidden;
 }
 
 .modal {
@@ -63,7 +62,6 @@ body, h1 {
 
 .modal-content {
   width: 500px;
-  height: 300px;
   background-color: #fff;
   margin: auto;
   border: 5px solid red;
@@ -89,5 +87,28 @@ body, h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #827fff), color-stop(50%, #6967ff), to(#4b49ff));
+  background: linear-gradient(180deg, #827fff 0, #6967ff 50%, #4b49ff);
+  cursor: pointer;
+  position: relative;
+  padding: 0 20px;
+}
+
+.no-scroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
