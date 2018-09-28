@@ -108,7 +108,5 @@ body, h1 {
 
 .no-scroll {
   position: fixed;
-  overflow-y: scroll;
-  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
