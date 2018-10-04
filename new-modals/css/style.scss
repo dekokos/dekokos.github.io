@@ -120,3 +120,14 @@ body {
     // margin-right: 17px;
     // width: 100%;
 }
+input {
+    display: block;
+}
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+        width: 30%;
+    }
+}

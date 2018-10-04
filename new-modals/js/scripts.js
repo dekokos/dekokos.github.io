@@ -36,12 +36,14 @@ $(function() {
     });
     function showModal(e) {
         var modal = $("." + e + "");
-        var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-        $('html').addClass('no-scroll').css('top',-scrollTop);
+        // var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+        // $('html').addClass('no-scroll').css('top',-scrollTop);
+        $('html').addClass('no-scroll');
 
         if (hasScrollbar()) {
         // с учетом горизонтального скролла. Чтобы небыло рывка при открытии модального окна
             var scrollWidth = getScrollbarWidth();
+            // console.log(scrollWidth);
             $("html").css({
                 "margin-right": scrollWidth
             });
@@ -66,11 +68,12 @@ $(function() {
         setTimeout(function() {
         var scrollTop = parseInt($('html').css('top'));
             $('html').removeClass('no-scroll');
-            $('html,body').scrollTop(-scrollTop);
+            // $('html,body').scrollTop(-scrollTop);
             $("html").css({
                 "margin-right": ""
             });
-            $("html").removeAttr("style");           
+            $("html").removeAttr("style");
+            // $("body").removeAttr("style");       
         }, 300);
     });
 
@@ -80,7 +83,7 @@ $(function() {
             setTimeout(function() {
                 var scrollTop = parseInt($('html').css('top'));
                 $('html').removeClass('no-scroll');
-                $('html,body').scrollTop(-scrollTop);
+                // $('html,body').scrollTop(-scrollTop);
                 $("html").css({
                     "margin-right": ""
                 });
