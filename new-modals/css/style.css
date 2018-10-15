@@ -56,6 +56,7 @@ body, h1 {
   opacity: 0;
   visibility: hidden;
   z-index: -1;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal.active {
@@ -143,6 +144,7 @@ body, h1 {
 
 .no-scroll {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 input {

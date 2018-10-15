@@ -37,7 +37,7 @@ body {
     }
 
 	.modal {
-		position: fixed;
+        position: fixed;
 		left: 0;
 		right: 0;
 		top: 0;
@@ -50,6 +50,7 @@ body {
         opacity: 0;
         visibility: hidden;
         z-index: -1;
+        -webkit-overflow-scrolling: touch;
         &.active {
             opacity: 1;
             visibility: visible;
@@ -119,6 +120,11 @@ body {
     // overflow-y: scroll;
     // margin-right: 17px;
     // width: 100%;
+
+    -webkit-overflow-scrolling: touch !important;
+    // overflow: auto !important;
+    // height: 100% !important;
+    
 }
 input {
     display: block;
